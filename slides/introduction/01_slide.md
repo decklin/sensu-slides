@@ -71,6 +71,12 @@ Sonian's old Nagios architecture
 * Web interface
 * Can resolve events, create stashes ("silence")
 
+!SLIDE center
+# Blurry Screenshots #
+
+![Dashboard Main](dashboard-main.png)  
+![Dashboard Open](dashboard-open.png)
+
 !SLIDE bullets
 # Configuration #
 
@@ -119,11 +125,20 @@ Instead of reimplementing the plugin conventions:
 !SLIDE bullets
 # Handlers #
 
+## Receive: ##
+
+* Check name/description/output
+* Client custom attributes
+* Check result history/flapping state
+
+!SLIDE bullets
+# Handlers #
+
 Can do things like...
 
 * Create incidents in PagerDuty
-* Process metrics
 * Report to IRC
+* Process metrics (can use plain text instead of JSON)
 
 !SLIDE bullets
 # Deployment #
